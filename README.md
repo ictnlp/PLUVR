@@ -47,7 +47,7 @@ Average the last 5 checkpoints and generate the results, `test/test1/test2` indi
 sh test.sh multi30k_en_de test multi30k_en_de
 ```
 
-For evaluation, please refer to [sacreBLEU](https://github.com/mjpost/sacrebleu)
+For evaluation, please refer to [sacreBLEU](https://github.com/mjpost/sacrebleu).
 
 ## Citation
 
