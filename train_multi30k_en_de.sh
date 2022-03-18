@@ -1,0 +1,21 @@
+exp=multi30k_en_de
+fairseq-train data-bin/multi30k_en_de --task translation \
+    --arch transformer_wmt_en_de --share-all-embeddings --dropout 0.3 \
+    --encoder-layers 6 --decoder-layers 6 \
+    --encoder-embed-dim 512 --decoder-embed-dim 512 \
+    --encoder-ffn-embed-dim 1024 --decoder-ffn-embed-dim 1024 \
+    --encoder-attention-heads 4 --decoder-attention-heads 4 \
+    --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
+    --lr-scheduler inverse_sqrt --warmup-init-lr 1e-07 --warmup-updates 2000 \
+    --lr 0.0005 --min-lr 1e-09 \
+    --criterion label_smoothed_cross_entropy --label-smoothing 0.1 --weight-decay 0.0 \
+    --max-tokens 4096 \
+    --update-freq 2 --no-progress-bar --log-format json --log-interval 100 \
+    --keep-last-epochs 20 \
+    --save-dir checkpoints/$exp \
+    --ddp-backend=no_c10d \
+    --patience 10 \
+    --max-update 8000 \
+    --left-pad-source False \
+    --multi-modal --topk 5 \
+    --latent-embedding vae/logs/exp_512_64_multi30k_en_de/latent_embedding.npy | tee logs/$exp.txt

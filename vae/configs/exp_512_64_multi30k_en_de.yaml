@@ -1,0 +1,24 @@
+model_params:
+  region_embedding_size: 2048
+  embedding_size: 512
+  hidden_size: 512
+  latent_size: 64
+  rnn_type: 'rnn'
+  max_sequence_length: 13
+
+exp_params:
+  phrase_path: '../data-bin/multi30k_en_de/bpe_phrases_multi30k_ende.txt'
+  region_path: 'region_embedding.npy'
+  batch_size: 1024
+  LR: 0.00005
+  anneal_step: 20000
+  anneal_func: 'linear'
+  sigmoid_factor: 0.0025
+  word_dropout: 0.1
+  embedding_dropout: 0.0
+  weight_decay: 0.0
+  max_epoches: 200 
+  print_freq: 10
+  log_dir: 'logs/'
+  data_file: '../data-bin/multi30k_en_de/phrase.json'
+  vocab_file: '../data-bin/multi30k_en_de/vocab.json'
