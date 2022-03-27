@@ -1,6 +1,6 @@
 # Neural Machine Translation with Phrase-Level Universal Visual Representations
 
-This is a PyTorch implementation for the ACL 2022 main conference paper [Neural Machine Translation with Phrase-Level Universal Visual Representations](https://arxiv.org/abs/2203.10426).
+This is a PyTorch implementation for the ACL 2022 main conference paper [Neural Machine Translation with Phrase-Level Universal Visual Representations](https://arxiv.org/abs/2203.10299).
 
 ## Preparation
 
