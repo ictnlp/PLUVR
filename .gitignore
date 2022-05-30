@@ -7,3 +7,4 @@ dataset/
 checkpoints/
 *.tgz
 *.pth
+**/.vscode/**
