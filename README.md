@@ -8,7 +8,7 @@ This is a PyTorch implementation for the ACL 2022 main conference paper [Neural 
 
 ```shell
 git clone git@github.com:ictnlp/PLUVR.git
-cd PLUVR/
+cd PLUVR/fairseq
 pip install --editable ./
 ```
 
