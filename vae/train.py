@@ -110,7 +110,7 @@ def main():
     filename = args.filename.split('/')[-1].split('.')[0]
     dest_dir = os.path.join(cfg['exp_params']['log_dir'], filename)
     if not os.path.exists(dest_dir):
-        os.mkdir(dest_dir)
+        os.makedirs(dest_dir, exist_ok=False)
     log_file = os.path.join(dest_dir, 'log.txt')
     if os.path.exists(log_file):
         os.remove(log_file)
