@@ -16,7 +16,15 @@ pip install --editable ./
 
 Considering the complexity of data processing (noun phrase extraction using [spaCy](https://spacy.io/), visual grounding using [Yang et al., 2019](https://github.com/zyang-ur/onestage_grounding), feature extraction using [Detectron2](https://github.com/facebookresearch/detectron2), and visual retrieval), we have only released the necessary processed files for the model training and omitted some intermediate files. For example, the processed fairseq-format text data and other necessary files for the latent-variable model are in the `data-bin/multi30k_en_{de,fr}` folder.
 
-Besides, for training of the latent-variable model, the visual features of all grounded regions are needed. We will release it soon, and you can extract them using scripts in the `visual_grounding/` folder now.
+Besides, for training of the latent-variable model, the visual features of all grounded regions are needed. 
+
+~We will release it soon, and you can extract them using scripts in the `visual_grounding/` folder now.~
+
+[upd:4/10] The visual features of all grounded regions `region_embedding.npy` can be downloaded via Baidu netdisk:
+
+**Link:** https://pan.baidu.com/s/1IzGf-H8PnjYNOtZ4mU9F2w
+**Password:** 8npa
+
 
 ## Training of latent-variable model
 
