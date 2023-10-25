@@ -59,7 +59,7 @@ For evaluation, please refer to [sacreBLEU](https://github.com/mjpost/sacrebleu)
 
 ## Citation
 
-In this repository is useful for you, please cite as:
+If this repository is useful for you, please cite as:
 ```
 @inproceedings{fang-and-feng-2022-PLUVR,
 	title = {Neural Machine Translation with Phrase-Level Universal Visual Representations},
